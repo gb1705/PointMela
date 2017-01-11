@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PointMila</string>
+
+    <string-array name="myarray">
+        <item>Select Collage Name</item>
+        <item>CMPH Medical Collage</item>
+        <item>K J Somaiya Medical Collage</item>
+        <item>Dr. D Y Patil Medical Collage</item>
+        <item>Terna Medical Collage</item>
+
+    </string-array>
+
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyBZY-IkubYZKlLoqU9sIbLft6PTJsycA6E
+    </string>
+</resources>

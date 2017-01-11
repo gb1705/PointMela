@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cme.pointmila.com">
+
+    <uses-permission android:name="bookmytruck.hirdhav.com.bookmytruck.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".OTPVerifyActivity" />
+        <activity android:name=".OTPSuccessfulActivity" />
+        <activity android:name=".Profile_DoctorActivity" />
+        <activity android:name=".Profile_StudentActivity" />
+        <activity
+            android:name=".ProfileDashboardActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity android:name=".ListOfPoints" />
+        <activity android:name=".PointsEditing" />
+        <activity android:name=".AddPoints" />
+        <activity android:name=".FirstYearActivity" />
+        <activity android:name=".ResidentialAddress" />
+        <activity android:name=".ClinicalAddress" />
+        <activity android:name=".ClinicalAddressupdate" />
+        <activity android:name=".Student_ResidentialAddress" />
+        <activity android:name=".AdditionalQualification_Popup" />
+        <activity android:name=".AdditionalQualification_Update" />
+        <activity android:name=".EmailCheckingActivity" />
+        <activity android:name=".Email_OTP" />
+        <activity android:name=".Email_OTPSuccessful" />
+        <activity android:name=".Reset_PasswordActivity" />
+        <activity android:name=".FirstYearCountActivity" />
+        <activity android:name=".SecondYearCountActivity" />
+        <activity android:name=".ThirdYearCountActvity" />
+        <activity android:name=".FourthYearCountActivity" />
+        <activity android:name=".FifthYearCountActivity" />
+        <activity android:name=".CompressEmailList" />
+        <activity android:name=".FirstYearPointEditingActivity" />
+        <activity android:name=".SecondYearPointEditingActivity" />
+        <activity android:name=".ThirdYearPointEditingActivity" />
+        <activity android:name=".FourthYearPointEditingActivity" />
+        <activity android:name=".FifthYearPointEditingActivity" />
+        <activity android:name=".election.Util.ShowPdf" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".election.ElectionDetailedActivity" />
+        <activity android:name=".election.ContactUs" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <!-- <activity android:name="cme.pointmila.com.maps.MapsActivity"> -->
+
+
+        <!-- </activity> -->
+
+        <activity android:name=".election.MMCPanelLitsFragment"></activity>
+    </application>
+
+</manifest>

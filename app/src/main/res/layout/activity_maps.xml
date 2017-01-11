@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/map"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="@color/appbackground"
+        />
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+       <TextView android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Note:"
+           android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1.Please carry your MMC ID card or \nGovt. Approved ID card for voting"
+            android:textStyle="bold"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.Click on location pin of Polling both to navigate"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

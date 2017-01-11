@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbackgroundnew">
+
+    <RelativeLayout
+        android:id="@+id/detail_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_landing_page_card_height"
+        android:layout_margin="@dimen/padding_8dp"
+        android:background="@drawable/white_box_with_grey_border"
+        android:padding="@dimen/padding_10dp">
+
+        <ImageView
+            android:id="@+id/dr_image"
+            android:layout_width="@dimen/app_landing_page_card_user_image_width"
+            android:layout_height="@dimen/app_landing_page_card_user_image_width"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:src="@drawable/doc" />
+
+        <TextView
+            android:id="@+id/drnametextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/dr_image"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_toRightOf="@id/dr_image"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Dr. Name"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qualificationtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drnametextview"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_toRightOf="@id/dr_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="Qualification"
+            android:textSize="11.2sp" />
+
+        <TextView
+            android:id="@+id/mmcnotextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/qualificationtextview"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_toRightOf="@id/dr_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="MMC No."
+            android:textSize="9.6sp" />
+
+        <TextView
+            android:id="@+id/districttxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mmcnotextview"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:layout_toRightOf="@id/dr_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="District"
+            android:textSize="9.6sp" />
+
+        <View
+            android:id="@+id/seperator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_1dp"
+            android:layout_below="@id/dr_image"
+            android:layout_marginBottom="@dimen/padding_10dp"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:background="#e5e5e5" />
+
+        <TextView
+            android:id="@+id/phonenumnbertxtview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seperator"
+            android:layout_marginRight="@dimen/padding_10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="District"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/detail_area"
+        android:layout_margin="@dimen/padding_8dp"
+        android:background="@drawable/white_box_with_grey_border">
+
+
+        <WebView
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/padding_10dp"
+            android:layout_marginRight="@dimen/padding_10dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+
+        <Button
+            android:id="@+id/pdfbuttonS"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_corner"
+            android:text="PDF"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/callbutton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:text="Contact Us"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/videolink"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/rounded_corner"
+            android:text="Videos"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
